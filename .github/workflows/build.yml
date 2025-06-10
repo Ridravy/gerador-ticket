@@ -27,7 +27,7 @@ jobs:
         pyinstaller --onefile --noconsole Gerador_de_Tickets_Py.py
 
     - name: Upload EXE artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: gerador-ticket-exe
         path: dist/Gerador_de_Tickets_Py.exe
