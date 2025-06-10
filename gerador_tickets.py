@@ -49,7 +49,7 @@ ctk.set_default_color_theme("blue")
 # Criar a janela principal
 root = ctk.CTk()
 root.title("Gerador de Tickets")
-root.geometry("600x780") # Ajustei a altura para acomodar os novos elementos
+root.geometry("600x850") # Ajustei a altura para acomodar os novos elementos
 
 # Frame principal para organizar os widgets
 main_frame = ctk.CTkFrame(root)
@@ -97,5 +97,7 @@ btn_limpar.pack(side=ctk.RIGHT, padx=10)
 ctk.CTkLabel(main_frame, text="RESULTADO:", font=ctk.CTkFont(weight="bold")).pack()
 text_resultado = ctk.CTkTextbox(main_frame, height=150, width=WIDGET_WIDTH, state=ctk.DISABLED)
 text_resultado.pack()
+
+ctk.CTkLabel(main_frame, text="Version 1.1.2 by Ridravy", font=ctk.CTkFont(size=10), fg_color="transparent").pack(pady=(10, 5))
 
 root.mainloop()
